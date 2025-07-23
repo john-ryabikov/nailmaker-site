@@ -18,7 +18,7 @@ export default function Reviews({ typedClass, children }: Props) {
     const { slidePos, slideStep, toggleSlidePos, toggleSlideStep } = useReviewsSlider()
 
     useEffect(() => {
-        if (slider.current) slider.current.style = `transform: translateX(${slidePos}px)`
+        if (slider.current) slider.current.setAttribute('style', `transform: translateX(${slidePos}px)`)
     }, [slider, slidePos])
 
     const changeSlideBrif = (step: string) => {
