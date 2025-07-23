@@ -24,7 +24,7 @@ export default function Reviews({ typedClass, children }: Props) {
     const changeSlideBrif = (step: string) => {
         toggleSlidePos(step, isMobile)
         toggleSlideStep(step)
-        if (slider.current) slider.current.style = `transform: translateX(${slidePos}px)`
+        if (slider.current) slider.current.setAttribute('style', `transform: translateX(${slidePos}px)`)
     }
 
     return (
