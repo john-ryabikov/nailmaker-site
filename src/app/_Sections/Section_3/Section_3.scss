@@ -1,0 +1,118 @@
+.section-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    padding-bottom: 120px;
+    &__cont {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__title-h3 {
+        position: relative;
+        width: 100%;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: start;
+        color: #303030;
+        margin-bottom: 80px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 24px;
+        }
+    }
+    &__results {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        @media only screen and (0 <= width <= 479px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+    }
+    &__results-col {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+        }
+    }   
+    &__result {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+        }
+    }
+    &__result-icon {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 105px;
+        height: 105px;
+        border-radius: 25px;
+        background-color: #F6F6F6;
+        img {
+            width: 52px;
+            @media only screen and (0 <= width <= 479px) {
+                width: 32px;
+            }
+        }
+        @media only screen and (0 <= width <= 479px) {
+            width: 65px;
+            height: 65px;
+        }
+    }
+    &__result-text {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 460px;
+        height: 105px;
+        border-radius: 15px;
+        padding-left: 30px;
+        background-color: #F6F6F6;
+        @media only screen and (0 <= width <= 479px) {
+            width: 300px;
+            height: 65px;
+            gap: 12px;
+        }
+    }
+    &__result-text-1 {
+        position: relative;
+        font-weight: 500;
+        font-size: 48px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 24px;
+        }
+    }
+    &__result-text-2 {
+        position: relative;
+        font-weight: 400;
+        font-size: 16px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 12px;
+        }
+    }
+}

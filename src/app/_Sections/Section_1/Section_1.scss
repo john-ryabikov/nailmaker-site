@@ -1,0 +1,76 @@
+.section-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 160px 40px 40px 40px;
+    @media only screen and (0 <= width <= 479px) {
+        padding-top: 90px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__fon {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("/img/Section-1/back-fon.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+    &__cont {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 80px;
+        @media only screen and (0 <= width <= 479px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-block: 60px;
+        }
+    }
+    &__main-cont {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 510px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+        }
+    }
+    &__title-h1 {
+        font-weight: 700;
+        font-size: 52px;
+        width: 100%;
+        color: #303030;
+        margin-bottom: 30px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 30px;
+        }
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        width: 470px;
+        margin-bottom: 40px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+    &__main-photo {
+        position: relative;
+        @media only screen and (0 <= width <= 479px) {
+            margin-top: 60px;
+            width: 100%;
+        }
+    }
+}

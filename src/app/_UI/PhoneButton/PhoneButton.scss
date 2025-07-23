@@ -1,0 +1,25 @@
+.phone-call-btn {
+    position: fixed;
+    display: none;
+    bottom: 30px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    z-index: 3;
+    @media only screen and (0 <= width <= 479px) {
+        display: block;
+    }
+    &__cont {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        background-color: #00a60b;
+        box-shadow: 0 0 10px 4px rgba(0, 166, 11, 0.25);
+    }
+}

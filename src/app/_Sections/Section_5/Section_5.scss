@@ -1,0 +1,235 @@
+.section-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    padding-top: 90px;
+    padding-bottom: 120px;
+    @media only screen and (0 <= width <= 479px) {
+        padding-top: 0;
+    }
+    &__cont {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &__elipse {
+        border-radius: 314px;
+        background: radial-gradient(50.49% 50.49% at 50% 50%, #FACB6B 0%, rgba(254, 233, 177, 0.06) 100%);
+        filter: blur(30px);
+        width: 314px;
+        height: 314px;
+        position: absolute;
+        top: -100px;
+        z-index: -1;
+        left: 0;
+        @media only screen and (0 <= width <= 479px) {
+            width: 200px;
+            height: 200px;
+            top: -60px;   
+        } 
+    }
+    &__title-h4 {
+        position: relative;
+        width: 100%;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: start;
+        color: #303030;
+        margin-bottom: 4px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 24px;
+        }
+    }
+    &__subtitle {
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #818284;
+        &_second {
+            width: 963px;
+            text-align: start;
+            margin-top: 40px;
+            color: inherit;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+    &__results {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+        @media only screen and (0 <= width <= 479px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+    }
+    &__result {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 580px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+        }
+    }
+    &__result-title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+    &__result-title-cap {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.5;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 22px;
+        }
+    }
+    &__result-title-subcaps {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #818284;
+        span {
+            display: inline-block;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 14px;
+        }
+    }
+    &__result-revenues {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid #55A02A;
+    }
+    &__result-revenue {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        &:first-child {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #55A02A;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            align-items: flex-start;
+        }
+    }
+    &__result-revenue-info, &__result-profit {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 50%;
+        @media only screen and (0 <= width <= 479px) {
+            width: 45%;
+        }
+    }
+    &__result-revenue-info-num, &__result-profit-num {
+        font-weight: 500;
+        font-size: 30px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 24px;
+        }
+    }
+    &__result-revenue-info-text, &__result-profit-text {
+        font-weight: 400;
+        font-size: 14px;
+        color: #818284;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 12px;
+        }
+    }
+    &__result-profit-num {
+        color: #55A02A;
+    }
+    &__faqs {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        width: 100%;
+        margin-top: 40px;
+        @media only screen and (0 <= width <= 479px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+    }
+    &__faq {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 50%;
+        height: 245px;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid #55A02A;
+        color: #55A02A;
+        &:last-child {
+            border: 2px solid #ED711B;
+            color: #ED711B;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            height: 220px;
+        }
+    }
+    &__faq-q {
+        font-weight: 500;
+        font-size: 26px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 22px;
+        }
+    }
+    &__faq-a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 12px;
+        }
+    }
+}    

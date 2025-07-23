@@ -1,0 +1,33 @@
+.alert {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;    
+    bottom: -320px;
+    right: 40px;
+    padding: 14px 20px 14px 20px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    transition: transform 0.4s;
+    z-index: 99999;
+    span {
+        font-size: 14px;
+    }
+    @media only screen and (0 <= width <= 479px) {
+        bottom: auto;
+        top: -320px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 280px;
+    }
+}
+
+.active {
+    transform: translateY(-340px);
+    @media only screen and (0 <= width <= 479px) {
+        transform: translate(50%, 340px);
+    }
+}

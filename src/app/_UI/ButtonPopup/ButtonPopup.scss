@@ -1,0 +1,46 @@
+.button-popup {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 220px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #ED711B;
+    box-shadow: 0 4px 10px 0 rgba(255, 107, 0, 0.5);
+    color: #ffffff;
+    transition: all 0.4s;
+    @media only screen and (0 <= width <= 479px) {
+        width: 100%;
+    }
+    &:hover {
+        background-color: #E8511B;
+    }
+    &__btn-icon {
+        position: relative;
+        width: 16px !important;
+        
+    }
+    &__btn-cont {
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+.in-header {
+    padding: 0;
+    min-width: 200px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.second {
+    background-color: #E8511B;
+    &:hover {
+        background-color: #c03604;
+    }
+}

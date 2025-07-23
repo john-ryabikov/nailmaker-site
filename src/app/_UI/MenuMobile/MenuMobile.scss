@@ -1,0 +1,98 @@
+.menu-mobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    right: -305px;
+    width: 305px;
+    height: 100vh;
+    border-radius: 20px 0 0 20px;
+    padding: 100px 20px 100px 20px;
+    background-color: #ffffff;
+    box-shadow: -8px 0px 8px -8px rgba(34, 60, 80, 0.2);
+    z-index: 99;
+    transition: transform 0.4s;
+    &_active {
+        transform: translateX(-100%);
+    }
+    &__close-btn {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        transition: all 0.4s;
+    }
+    &__nav-links {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    &__nav-link {
+        position: relative;
+        padding: 8px 20px 8px 20px;
+        border-radius: 18px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        transition: all 0.4s;
+        &:hover {
+            background-color: #F0F0F0;
+        }
+    }
+    &__phone {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    &__left-links-socials {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 4px;
+        margin-bottom: 30px;
+        @media only screen and (0 <= width <= 479px) {
+            margin-right: 0;
+        }
+    }
+    &__left-link-socials {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        transition: all 0.4s;
+        &:hover {
+            background-color: #EFEFEF;
+        }
+    }
+    &__phone-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right: 10px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    &__phone-text-cap {
+        font-weight: 100;
+        font-size: 10px;
+    }
+    &__phone-text-num {
+        font-weight: 700;
+        font-size: 22px;
+    }
+}

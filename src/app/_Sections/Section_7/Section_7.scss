@@ -1,0 +1,58 @@
+.section-7 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    padding-bottom: 120px;
+    &__cont {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__info {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        background: url("/img/Section-7/info-fon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 150px;
+        color: #171717;
+        padding-left: 70px;
+        @media only screen and (0 <= width <= 479px) {
+            padding-block: 40px;
+            padding-inline: 30px;
+            height: auto;
+            background-position: center;
+        }
+    }
+    &__info-title {
+        width: 820px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            font-size: 22px;
+            line-height: normal;
+        }
+    }
+    &__info-subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+}    

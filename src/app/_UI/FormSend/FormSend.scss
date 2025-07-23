@@ -1,0 +1,142 @@
+.form-send {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 40px;
+    @media only screen and (0 <= width <= 479px) {
+        width: 100%;
+    }
+    &__inputs-row {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        &:last-child {
+            gap: 16px;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+        }
+    }
+    &__label {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        @media only screen and (0 <= width <= 479px) {
+            align-items: center;
+        }
+    }
+    &__label-title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        color: #000;
+        margin-bottom: 6px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 90%;
+            text-align: start;
+        }
+    }
+    &__input {
+        position: relative;
+        font-weight: 300;
+        outline: none;
+        border: none;
+        padding-inline: 20px;
+        border-radius: 10px;
+        width: 300px;
+        height: 60px;
+        background-color: #EDEDED;
+        &::placeholder {
+            color: #a8a8a8;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            width: 90%;
+        }
+    }
+    &__button {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        border-radius: 10px;
+        width: 300px;
+        height: 60px;
+        color: #ffffff;
+        box-shadow: 0 4px 10px 0 rgba(255, 107, 0, 0.5);
+        background: #ed711b;
+        transition: all 0.4s;
+        margin-top: 20px;
+        &:hover {
+            background-color: #E8511B;
+        }
+        span {
+            font-weight: 600;
+            font-size: 14px;
+        }
+        &:disabled {
+            opacity: 0.45;
+            pointer-events: none;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            width: 90%;
+        }
+    }
+    &__approval {
+        position: relative;
+        top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        input {
+            position: relative;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ed711b;
+            border-radius: 4px;
+            cursor: pointer;
+            &:checked {
+                background-color: #ed711b;
+                background-image: url("/img/Section-7/checked_icon.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        span {
+            width: 290px;
+            font-weight: 400;
+            font-size: 12px;
+            color: #BFBFBF;
+            a {
+                text-decoration: underline;
+                color: #ED711B;
+                transition: all 0.4s;
+                &:hover {
+                    color: #E8511B;
+                }
+            }
+        }
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            justify-content: center;
+            span {
+                width: auto;
+            }
+        }
+    }
+}
