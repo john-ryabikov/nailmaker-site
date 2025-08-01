@@ -9,7 +9,7 @@
     @media only screen and (0 <= width <= 479px) {
         padding-top: 120px;
     }
-    &__cont, &__extra-wrapper {
+    &__cont {
         position: relative;
         display: flex;
         flex-direction: row;
@@ -23,6 +23,7 @@
     }
     &__main-photo {
         position: relative;
+        width: 640px;
         @media only screen and (0 <= width <= 479px) {
             width: 100%;
         }
@@ -33,19 +34,16 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        width: 350px;
-        @media only screen and (0 <= width <= 479px) {
-            width: 100%;
-        }
+        width: 100%;
     }
     &__title-h2 {
         font-weight: 700;
-        font-size: 48px;
+        font-size: 44px;
         width: 100%;
         color: #303030;
         margin-bottom: 30px;
         @media only screen and (0 <= width <= 479px) {
-            font-size: 24px;
+            font-size: 28px;
         }
     }
     &__subtitle {

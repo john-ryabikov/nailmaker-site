@@ -1,7 +1,6 @@
 import { reviews } from "@/app/_Constants/Reviews";
 
 import Container from "@/app/_UI/Container/Container";
-import ButtonPopup from "@/app/_UI/ButtonPopup/ButtonPopup";
 import AnimatedSection from "@/app/_UI/AnimatedTags/AnimatedSection";
 import Reviews from "./Reviews";
 
@@ -15,7 +14,7 @@ export default function Section_6({ typedClass }: Props) {
   return (
     <AnimatedSection typedClass={typedClass}>
       <Container typedClass={`${typedClass}__cont wrapper`}>
-        <h4 className={`${typedClass}__title-h4`}>Кейсы партнёров NailMaker Bar</h4>
+        <h4 className={`${typedClass}__title-h4`}>Кейсы партнёров СЕРДЦЕ МАСТЕРА</h4>
         <Container typedClass={`${typedClass}__cont wrapper_slider`}>
           <Reviews typedClass={typedClass}>
             {reviews.map(review => (
@@ -42,7 +41,7 @@ export default function Section_6({ typedClass }: Props) {
                         <span className={`${typedClass}__reviews-slider-slide-info-avatar-role`}>{review.role}</span>
                       </p>
                     </div>
-                    <ButtonPopup typedClass="button-popup" icon="/img/Icons/video_icon.svg" cont="Смотерть отзыв"/>
+                    {/* <ButtonPopup typedClass="button-popup" icon="/img/Icons/video_icon.svg" cont="Смотерть отзыв"/> */}
                   </div>
                   <p className={`${typedClass}__reviews-slider-slide-info-avatar-rev`}>{review.avatar_rev}</p>
                 </div>

@@ -13,8 +13,9 @@ export default function Section_1({ typedClass }: Props) {
       <div className={`${typedClass}__fon`}></div>
       <Container typedClass={`${typedClass}__cont wrapper`}>
         <div className={`${typedClass}__main-cont`}>
-          <h1 className={`${typedClass}__title-h1`}>Открой свою студию красоты и зарабатывай от 400 000 в месяц*</h1>
-          <p className={`${typedClass}__subtitle`}>Оставьте заявку и получите 100 000 руб на маркетинг при открытии.<br/><br/>*общие инвестиции 4 млн. рублей</p>
+          <h1 className={`${typedClass}__title-h1`}>Открой прибыльное мини-производство строительных материалов и зарабатывай<br/>до <strong>400 000₽</strong> в месяц</h1>
+          <p className={`${typedClass}__title`}>Два вибростола <b>+</b> формы <b>+</b> обучающие материалы по запуску производства – <strong>79 000₽</strong></p>
+          <p className={`${typedClass}__subtitle`}>*Комплект 3 в 1: оборудование, формы, обучение по запуску производства.<br/><br/><b>Окупаемость от 2-х месяцев</b></p>
           <ButtonPopup typedClass="button-popup" icon="/img/Icons/send_icon.svg" cont="Отправить заявку"/>
         </div>
         <img className={`${typedClass}__main-photo`} src="/img/Section-1/video-skeleton.png" alt=""/>

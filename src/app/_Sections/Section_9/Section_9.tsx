@@ -14,8 +14,8 @@ export default function Section_9({ typedClass }: Props) {
       <Container typedClass={`${typedClass}__cont wrapper`}>
         <img className={`${typedClass}__image`} src="/img/Section-9/image-skeleton.png" alt="Image" />
           <div className={`${typedClass}__info`}>
-            <h6 className={`${typedClass}__info-title`}>Присоединяйтесь к успешной команде NailMaker Bar</h6>
-            <p className={`${typedClass}__info-subtitle`}>Заполните форму и получите всю необходимую информацию для открытия успешной студии маникюра</p>
+            <h6 className={`${typedClass}__info-title`}>Присоединяйтесь к успешной команде СЕРДЦЕ МАСТЕРА</h6>
+            <p className={`${typedClass}__info-subtitle`}>Заполните форму и получите всю необходимую информацию для открытия своего мини-производства строительных материалов</p>
             <FormSend typedClass="form-send" isPopup={false}/>
           </div>
       </Container>

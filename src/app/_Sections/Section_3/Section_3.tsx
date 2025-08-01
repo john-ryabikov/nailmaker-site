@@ -13,7 +13,7 @@ export default function Section_3({ typedClass }: Props) {
   return (
     <AnimatedSection typedClass={typedClass}>
       <Container typedClass={`${typedClass}__cont wrapper`}>
-        <h3 className={`${typedClass}__title-h3`}>Результаты сети NailMaker Bar</h3>
+        <h3 className={`${typedClass}__title-h3`}>Результаты сети СЕРДЦЕ МАСТЕРА</h3>
         <div className={`${typedClass}__results`}>
           <div className={`${typedClass}__results-col`}>
             {results.slice(0, 3).map((result) => (

@@ -12,17 +12,22 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        @media only screen and (0 <= width <= 479px) {
+            align-items: flex-start;
+        }
     }
     &__title-h3 {
         position: relative;
         width: 100%;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 44px;
         text-align: start;
         color: #303030;
         margin-bottom: 80px;
         @media only screen and (0 <= width <= 479px) {
-            font-size: 24px;
+            font-size: 28px;
+            width: 256px;
+            margin-bottom: 40px;
         }
     }
     &__results {
@@ -58,6 +63,7 @@
         gap: 30px;
         @media only screen and (0 <= width <= 479px) {
             width: 100%;
+            gap: 14px;
         }
     }
     &__result-icon {
@@ -68,7 +74,7 @@
         justify-content: center;
         width: 105px;
         height: 105px;
-        border-radius: 25px;
+        border-radius: 15px;
         background-color: #F6F6F6;
         img {
             width: 52px;
@@ -97,12 +103,13 @@
             width: 300px;
             height: 65px;
             gap: 12px;
+            padding-left: 16px;
         }
     }
     &__result-text-1 {
         position: relative;
         font-weight: 500;
-        font-size: 48px;
+        font-size: 42px;
         @media only screen and (0 <= width <= 479px) {
             font-size: 24px;
         }
@@ -111,8 +118,10 @@
         position: relative;
         font-weight: 400;
         font-size: 16px;
+        width: 220px;
         @media only screen and (0 <= width <= 479px) {
             font-size: 12px;
+            width: 130px;
         }
     }
 }

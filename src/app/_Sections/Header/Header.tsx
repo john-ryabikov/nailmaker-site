@@ -29,7 +29,7 @@ export default function Header({ typedClass }: Props) {
               </p>
               <p className={`${typedClass}__phone-text`}>
                 <span className={`${typedClass}__phone-text-cap`}>Звонок по России бесплатный</span>
-                <span className={`${typedClass}__phone-text-num`}>+7 (925) 369-90-91</span>
+                <span className={`${typedClass}__phone-text-num`}>+7 (926) 886-95-99</span>
               </p>
             </div>
             <ul className={`${typedClass}__nav-links`}>

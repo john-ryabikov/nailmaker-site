@@ -28,6 +28,7 @@
         color: #171717;
         padding-left: 70px;
         @media only screen and (0 <= width <= 479px) {
+            width: 100vw;
             padding-block: 40px;
             padding-inline: 30px;
             height: auto;
@@ -47,12 +48,14 @@
         }
     }
     &__info-subtitle {
-        font-weight: 400;
+        font-weight: 300;
         font-size: 16px;
         line-height: 23px;
+        color: #171717;
         @media only screen and (0 <= width <= 479px) {
             width: 100%;
             font-size: 14px;
+            line-height: normal;
         }
     }
 }    

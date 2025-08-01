@@ -12,17 +12,21 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        @media only screen and (0 <= width <= 479px) {
+            align-items: flex-start;
+        }
     }
     &__title-h5 {
         position: relative;
         width: 100%;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 44px;
         text-align: start;
         color: #303030;
         margin-bottom: 4px;
         @media only screen and (0 <= width <= 479px) {
-            font-size: 24px;
+            width: 270px;
+            font-size: 28px;
         }
     }
     &__provisions {
@@ -55,7 +59,7 @@
         align-items: center;
         justify-content: flex-start;
         width: 580px;
-        height: 480px;
+        height: 400px;
         background-color: #F6F6F6;
         border-radius: 25px;
         padding-top: 200px;
@@ -88,8 +92,8 @@
     &__provision-text {
         width: 100%;
         text-align: start;
-        font-weight: 400;
-        font-size: 15px;
+        font-weight: 300;
+        font-size: 14px;
         line-height: 1.5;
         color: #171717;
     }

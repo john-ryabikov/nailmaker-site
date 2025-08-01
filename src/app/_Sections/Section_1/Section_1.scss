@@ -41,33 +41,64 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        width: 510px;
+        width: 640px;
         @media only screen and (0 <= width <= 479px) {
             width: 100%;
         }
     }
     &__title-h1 {
         font-weight: 700;
-        font-size: 52px;
+        font-size: 44px;
         width: 100%;
         color: #303030;
         margin-bottom: 30px;
+        strong {
+            color: #ED711B;
+        }
         @media only screen and (0 <= width <= 479px) {
-            font-size: 30px;
+            font-size: 32px;
+        }
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        width: 100%;
+        color: #303030;
+        margin-bottom: 30px;
+        b {
+            display: inline-block;
+            font-weight: 600;
+            color: #ED711B;
+            padding-inline: 4px;
+        }
+        strong {
+            display: inline-block;
+            background-color: #ED711B;
+            font-weight: 600;
+            padding-inline: 16px;
+            padding-block: 4px;
+            border-radius: 20px;
+            color: #fff;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 22px;
         }
     }
     &__subtitle {
-        font-weight: 400;
-        font-size: 24px;
-        width: 470px;
+        font-weight: 300;
+        font-size: 14px;
+        width: 100%;
         margin-bottom: 40px;
-        @media only screen and (0 <= width <= 479px) {
-            width: 100%;
-            font-size: 18px;
+        color: #888888;
+        b {
+            font-weight: 600;
+            font-size: 24px;
+            color: #ED711B;
         }
     }
     &__main-photo {
         position: relative;
+        width: 540px;
         @media only screen and (0 <= width <= 479px) {
             margin-top: 60px;
             width: 100%;

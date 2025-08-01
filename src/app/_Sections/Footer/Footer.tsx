@@ -9,7 +9,7 @@ interface Props {
 export default function Footer({ typedClass }: Props) {
   return (
     <footer className={`${typedClass}`}>
-      <Container typedClass={`${typedClass}__cont wrapper_large`}>
+      <Container typedClass={`${typedClass}__cont wrapper`}>
         <p className={`${typedClass}__rules-links`}>
           <a className={`${typedClass}__rules-link`} href="https://сердце-мастера.рф/include/offer_detail.php" target="_blank" rel="nofollow">Политика в отношении обработки персональных данных</a>
           <a className={`${typedClass}__rules-link`} href="https://сердце-мастера.рф/include/licenses_detail.php" target="_blank" rel="nofollow">Согласие на обработку персональных данных</a>

@@ -69,7 +69,7 @@ export default function FormRecord({ typedClass }: Props) {
     return (
         <form className={typedClass} onSubmit={handleSubmit(sendForm)}>
             <img className={`${typedClass}__note`} src="img/Section-7/excursion-form-img.png" alt="Form-fon" />
-            <h5 className={`${typedClass}__title-h5`}>Записаться на экскурсию в любой салон партнёра-франчайзи</h5>
+            <h5 className={`${typedClass}__title-h5`}>Записаться на онлайн-экскурсию</h5>
             <div className={`${typedClass}__inputs`}>
                 <label className={`${typedClass}__label`}>
                     <span className={`${typedClass}__label-title`}>Ваше имя</span>

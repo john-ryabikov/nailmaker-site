@@ -1,8 +1,8 @@
 import Container from "@/app/_UI/Container/Container";
 import AnimatedSection from "@/app/_UI/AnimatedTags/AnimatedSection";
+import FormRecord from "@/app/_UI/FormRecord/FormRecord";
 
 import "./Section_7.scss"
-import FormRecord from "@/app/_UI/FormRecord/FormRecord";
 
 interface Props {
   typedClass: string

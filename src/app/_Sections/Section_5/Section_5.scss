@@ -37,12 +37,13 @@
         position: relative;
         width: 100%;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 44px;
         text-align: start;
         color: #303030;
         margin-bottom: 4px;
         @media only screen and (0 <= width <= 479px) {
-            font-size: 24px;
+            font-size: 28px;
+            width: 310px;
         }
     }
     &__subtitle {
@@ -52,15 +53,19 @@
         font-size: 16px;
         line-height: 1.5;
         color: #818284;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            font-size: 12px;
+        }
         &_second {
             width: 963px;
             text-align: start;
             margin-top: 40px;
             color: inherit;
-        }
-        @media only screen and (0 <= width <= 479px) {
-            width: 100%;
-            font-size: 14px;
+            @media only screen and (0 <= width <= 479px) {
+                width: 100%;
+                font-size: 14px;
+            }
         }
     }
     &__results {
@@ -94,7 +99,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 16px;
+        gap: 4px;
         margin-bottom: 20px;
     }
     &__result-title-cap {

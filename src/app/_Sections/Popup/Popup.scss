@@ -33,7 +33,7 @@
         @media only screen and (0 <= width <= 479px) {
             width: 100%;
             height: auto;
-            padding-block: 40px 50px;
+            padding-block: 40px 60px;
             padding-inline: 30px;
         }
     }
@@ -62,7 +62,7 @@
     }
     &__subtitle {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 25px;
         color: #111111;
         width: 476px;

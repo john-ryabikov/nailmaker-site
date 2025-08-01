@@ -1,0 +1,114 @@
+.section-1-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-block: 120px 50px;
+    &__cont, &__extra-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__extra-wrapper {
+        width: 100%;
+    }
+    &__title-h2 {
+        font-weight: 700;
+        font-size: 44px;
+        width: 100%;
+        color: #303030;
+        margin-bottom: 80px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    }
+    &__complects {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 60px;
+        @media only screen and (0 <= width <= 479px) {
+            gap: 30px;
+        }
+    }
+    &__complects-row {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        @media only screen and (0 <= width <= 479px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+    }
+    &__complect {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 580px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+        }
+    }
+    &__complect-img {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        @media only screen and (0 <= width <= 479px) {
+            width: 140px;
+        }
+    }
+    &__complect-info {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+        padding-left: 160px;
+        padding-block: 70px;
+        background-color: #F6F6F6;
+        border-radius: 20px;
+        width: 450px;
+        height: 300px;
+        @media only screen and (0 <= width <= 479px) {
+            width: 90%;
+            height: 180px;
+            padding-left: 120px;
+            padding-block: 26px;
+            gap: 16px;
+        }
+    }
+    &__complect-info-cap {
+        position: relative;
+        font-weight: 400;
+        font-size: 28px;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 20px;
+        }
+    }
+    &__complect-info-text {
+        position: relative;
+        font-weight: 300;
+        font-size: 14px;
+        color: #171717;
+        @media only screen and (0 <= width <= 479px) {
+            font-size: 12px;
+        }
+    }
+}
