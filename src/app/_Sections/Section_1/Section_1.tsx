@@ -1,5 +1,6 @@
 import Container from "@/app/_UI/Container/Container";
 import ButtonPopup from "@/app/_UI/ButtonPopup/ButtonPopup";
+import VideoBlock from "@/app/_UI/VideoBlock/VideoBlock";
 
 import "./Section_1.scss"
 
@@ -18,7 +19,7 @@ export default function Section_1({ typedClass }: Props) {
           <p className={`${typedClass}__subtitle`}>*Комплект 3 в 1: оборудование, формы, обучение по запуску производства.<br/><br/><b>Окупаемость от 2-х месяцев</b></p>
           <ButtonPopup typedClass="button-popup" icon="/img/Icons/send_icon.svg" cont="Отправить заявку"/>
         </div>
-        <img className={`${typedClass}__main-photo`} src="/img/Section-1/video-skeleton.png" alt=""/>
+        <VideoBlock/>
       </Container>
     </section>
   )

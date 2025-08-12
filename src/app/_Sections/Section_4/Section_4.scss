@@ -22,8 +22,9 @@
         color: #303030;
         margin-bottom: 80px;
         @media only screen and (0 <= width <= 479px) {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             font-size: 28px;
+            text-align: center;
         }
     }
     &__prems {

@@ -6,7 +6,7 @@
     justify-content: center;
     gap: 50px;
     padding-top: 60px;
-    width: 1110px;
+    width: 1000px;
     height: 420px;
     border-radius: 25px;
     background: url("/img/Section-7/form-record-fon.jpg");
@@ -23,10 +23,11 @@
     }
     &__note {
         position: absolute;
-        bottom: -70px;
+        bottom: -100px;
         left: -70px;
+        width: 330px;
         @media only screen and (0 <= width <= 479px) {
-            bottom: -80px;
+            bottom: -120px;
             left: 50%;
             transform: translateX(-50%);
         }

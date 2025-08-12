@@ -12,7 +12,7 @@ interface Props {
 
 export default function Section_8({ typedClass }: Props) {
   return (
-    <AnimatedSection typedClass={typedClass} id="faq">
+    <AnimatedSection typedClass={typedClass} id="help">
       <Container typedClass={`${typedClass}__cont wrapper`}>
         <h5 className={`${typedClass}__title-h5`}>Обеспечиваем для своих партнёров</h5>
         <div className={`${typedClass}__provisions`}>

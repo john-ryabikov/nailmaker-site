@@ -43,7 +43,8 @@
         margin-bottom: 4px;
         @media only screen and (0 <= width <= 479px) {
             font-size: 28px;
-            width: 310px;
+            width: 100%;
+            text-align: center;
         }
     }
     &__subtitle {
@@ -56,6 +57,7 @@
         @media only screen and (0 <= width <= 479px) {
             width: 100%;
             font-size: 12px;
+            text-align: center;
         }
         &_second {
             width: 963px;

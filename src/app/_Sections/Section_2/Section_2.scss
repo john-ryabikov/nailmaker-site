@@ -7,7 +7,7 @@
     width: 100vw;
     padding-block: 140px;
     @media only screen and (0 <= width <= 479px) {
-        padding-top: 120px;
+        padding-top: 80px;
     }
     &__cont {
         position: relative;
@@ -25,7 +25,9 @@
         position: relative;
         width: 640px;
         @media only screen and (0 <= width <= 479px) {
-            width: 100%;
+            position: absolute;
+            top: 130px;
+            width: 90%;
         }
     }
     &__main-cont {
@@ -44,6 +46,8 @@
         margin-bottom: 30px;
         @media only screen and (0 <= width <= 479px) {
             font-size: 28px;
+            margin-bottom: 360px;
+            text-align: center;
         }
     }
     &__subtitle {
@@ -53,6 +57,7 @@
         margin-bottom: 40px;
         @media only screen and (0 <= width <= 479px) {
             font-size: 14px;
+            text-align: center;
         }
     }
     &__link {
@@ -64,6 +69,10 @@
         transition: all 0.4s;
         &:hover {
             color: #E8511B;
+        }
+        @media only screen and (0 <= width <= 479px) {
+            width: 100%;
+            text-align: center;
         }
     }
 }

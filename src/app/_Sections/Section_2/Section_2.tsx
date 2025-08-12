@@ -12,7 +12,7 @@ export default function Section_2({ typedClass }: Props) {
   return (
     <AnimatedSection typedClass={typedClass} id="about">
       <Container typedClass={`${typedClass}__cont wrapper`}>
-        <img className={`${typedClass}__main-photo`} src="/img/Section-2/image-skeleton.png" alt=""/>
+        <img className={`${typedClass}__main-photo`} src="/img/Section-2/about.png" alt=""/>
         <div className={`${typedClass}__main-cont`}>
           <h2 className={`${typedClass}__title-h2`}>О компании<br/>СЕРДЦЕ МАСТЕРА</h2>
           <p className={`${typedClass}__subtitle`}>

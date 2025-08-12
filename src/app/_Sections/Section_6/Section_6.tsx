@@ -12,14 +12,14 @@ interface Props {
 
 export default function Section_6({ typedClass }: Props) {
   return (
-    <AnimatedSection typedClass={typedClass}>
+    <AnimatedSection typedClass={typedClass} id="cases">
       <Container typedClass={`${typedClass}__cont wrapper`}>
         <h4 className={`${typedClass}__title-h4`}>Кейсы партнёров СЕРДЦЕ МАСТЕРА</h4>
         <Container typedClass={`${typedClass}__cont wrapper_slider`}>
           <Reviews typedClass={typedClass}>
             {reviews.map(review => (
               <div className={`${typedClass}__reviews-slider-slide`} key={review.id}>
-                <img src="img/Section-6/image-skeleton.png" alt={review.id} />
+                <img src={review.photo} alt={review.id} />
                 <div className={`${typedClass}__reviews-slider-slide-info`}>
                   <p className={`${typedClass}__reviews-slider-slide-info-title`}>
                     <span className={`${typedClass}__reviews-slider-slide-info-title-cap`}>{review.cap}</span>
@@ -41,7 +41,6 @@ export default function Section_6({ typedClass }: Props) {
                         <span className={`${typedClass}__reviews-slider-slide-info-avatar-role`}>{review.role}</span>
                       </p>
                     </div>
-                    {/* <ButtonPopup typedClass="button-popup" icon="/img/Icons/video_icon.svg" cont="Смотерть отзыв"/> */}
                   </div>
                   <p className={`${typedClass}__reviews-slider-slide-info-avatar-rev`}>{review.avatar_rev}</p>
                 </div>

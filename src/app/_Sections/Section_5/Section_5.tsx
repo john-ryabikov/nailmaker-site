@@ -12,7 +12,7 @@ interface Props {
 
 export default function Section_5({ typedClass }: Props) {
   return (
-    <AnimatedSection typedClass={typedClass} id="tabels">
+    <AnimatedSection typedClass={typedClass} id="results">
       <Container typedClass={`${typedClass}__cont wrapper`}>
         <div className={`${typedClass}__elipse`}></div>
         <h4 className={`${typedClass}__title-h4`}>Результаты филиалов СЕРДЦЕ МАСТЕРА</h4>

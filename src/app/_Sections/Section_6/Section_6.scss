@@ -7,7 +7,7 @@
     width: 100vw;
     padding-bottom: 120px;
     @media only screen and (0 <= width <= 479px) {
-        padding-bottom: 90px;
+        padding-bottom: 40px;
     }
     &__cont {
         position: relative;
@@ -26,7 +26,9 @@
         margin-bottom: 4px;
         @media only screen and (0 <= width <= 479px) {
             font-size: 28px;
-            padding-right: 100px;
+            width: 100%;
+            padding-inline: 20px;
+            text-align: center;
         }
     }
     &__reviews {
