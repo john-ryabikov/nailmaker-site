@@ -112,8 +112,8 @@
     width: 410px;
     height: 545px;
     @media only screen and (0 <= width <= 479px) {
-        width: 100%;
-        height: 500px;
+        width: auto;
+        height: 410px;
         margin-top: 60px;
     }
     &__btn-play {
