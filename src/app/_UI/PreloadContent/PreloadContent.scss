@@ -1,0 +1,32 @@
+.preload-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden; 
+    z-index: -9999;
+    content:
+    //Video 
+        url("/img/Section-1/video-tabel.mp4")
+        url("/img/Section-1/video-tabel-prew.png")
+    //Icons
+        url("/img/Icons/send_icon.svg")
+        url("/img/Section-1/button_video_icon.svg")
+        url("/img/Header/vk_icon.svg")
+        url("/img/Header/tg_icon.svg")
+        url("/img/Header/ok_icon.svg")
+        url("/img/Header/youtube_icon.svg")
+        url("/img/Icons/call_icon.svg")
+        url("/img/Icons/logo.svg")
+        url("/img/Icons/menu_icon.svg")
+        url("/img/Icons/close_icon.svg")
+        url("/img/Section-7/checked_icon.svg")
+        url("/img/Popup/plus.svg")
+        url("/img/Section-7/checked_icon.svg")
+        url("/img/Section-7/checked_icon.svg")
+    //Images
+        url("/img/Section-7/form-record-fon.jpg")
+        url("/img/Section-1/back-fon.png")    
+        url("/img/Section-7/info-fon.png")
+}

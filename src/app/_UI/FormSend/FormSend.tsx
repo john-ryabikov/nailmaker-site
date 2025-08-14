@@ -5,13 +5,13 @@ import { useAlerts } from "@/app/_Store/store"
 import { IMaskInput } from "react-imask";
 import { useState } from 'react';
 
-// import axios from 'axios'
+import axios from 'axios'
 
 import "./FormSend.scss"
 
-// const TOKEN = "7596491276:AAF8GV4jU3zZRzmvGfNCQqHg9yoQtvzbnnk";
-// const CHAT_ID = "-1002876020412";
-// const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+const TOKEN = "7949131036:AAFJg1-wLsIWVeIIq80Un4_do161WfVaVCo";
+const CHAT_ID = "-1002878515435";
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 type FormData = {
     name: string,
@@ -57,13 +57,13 @@ export default function FormSend({ typedClass, isPopup}: Props) {
         for (let text_tg of message_tg) {
           message += text_tg
         }
-        console.log(message)
+        // console.log(message)
 
-        // axios.post(URI_API, {
-        //   chat_id: CHAT_ID,
-        //   parse_mode: "html",
-        //   text: message
-        // }).catch ((err) => alert(err))
+        axios.post(URI_API, {
+          chat_id: CHAT_ID,
+          parse_mode: "html",
+          text: message
+        }).catch ((err) => alert(err))
         
     }
 

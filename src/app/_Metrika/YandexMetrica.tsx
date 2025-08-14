@@ -24,7 +24,7 @@ interface Props {
   initParameters?: YandexMetrikaInitParameters
 };
 
-export default function YandexMetrika({ id, initParameters}: Props) {
+export default function YandexMetrika({ id }: Props) {
   /* eslint-disable @next/next/no-img-element */
   return (
     <>
@@ -46,7 +46,7 @@ export default function YandexMetrika({ id, initParameters}: Props) {
     (k.async = 1),
     (k.src = r),
     a.parentNode.insertBefore(k, a);
-})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=${id}", "ym");
 
 ym(${id}, "init", {
         clickmap:true,
